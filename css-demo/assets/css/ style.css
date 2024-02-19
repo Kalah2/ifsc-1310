@@ -1,0 +1,24 @@
+/* ---- CSS Demo ---- */
+
+/*  --------------- Global Styles -----------------  */
+
+body{
+    font-family: "Gabarito", sans-serif;
+    }
+
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  header.primary{
+  background:red;
+  }
+
