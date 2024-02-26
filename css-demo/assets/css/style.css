@@ -1,0 +1,177 @@
+/* ---- CSS Demo ---- */
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /*  --------------- Responsive Images -----------------  */
+
+img{
+  max-width:100%;
+}
+
+  /*  --------------- Utility Classes -----------------  */
+
+.container{
+  max-width: 960px;
+  width:80vw;
+  margin:40px auto;
+}
+
+/*  --------------- Global Styles -----------------  */
+
+body{
+    font-family: "Gabarito", sans-serif;
+    margin:0;
+    }
+    
+header.primary {
+   background-color: purple;
+    color:#ffffff; 
+    text-align:center;  
+    text-shadow:2px 2px 20px #000000; 
+    padding:40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;  
+    /*Single value short hand*/  
+    padding:40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;  
+    /* Two Value Top/Bottom / L/R */
+    padding: 20px 40px;
+    }
+
+  header.primary h1 {
+    font-size: 2.4rem;
+    background:rgb(235, 84, 202);
+    margin:20px 0;
+  }
+
+  header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none
+  }
+
+  header.primary h2{
+    background:rgb(224, 78, 212);
+    margin:0;
+    font-size: 1.4rem;
+  }
+
+  header.primary nav{
+    max-width:900px;
+    margin: 20px auto;
+  }
+
+  header.primary ul {
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  
+  header.primary ul li{
+    list-style-type:none;
+  }
+
+  header.primary nav a{
+    color:#fff;
+    text-decoration:none;
+    background-color:#000000;
+    background-color:rgba(0,0,0,.4);
+    padding:5px 10px;
+     border-radius: 20px;
+     border: 1px solid #ffffff
+     transition:.4s;
+}
+
+header.primary nav a:hover{
+  background-color:rgba(0,0,0,.8);
+}
+
+#content{
+  line-hight:1.5;
+}
+
+
+#content h2{
+  color:purple;
+  border-bottom:2px dotted #c773e9; 
+}
+
+#content h3{
+  color:purple;
+  border-left:7.5px solid purple;
+  padding:7.5px;
+}
+
+#blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:2rem;
+}
+
+#blog .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+  padding: 10px;
+  border-radius:4px;
+  font-size:.8rem;
+}
+
+#blog figure{
+  margin:0;
+}
+
+#blog figcaption{
+  text-transform:uppercase;
+  font-size:.6rem;
+  text-align:center;
+  color:#c0c0c0;
+}
+
+#blog header{
+  background:#f345c8;
+  padding-top:10px;
+  font-size:.6rem;
+}
+
+#blog header h2{
+  margin:0;
+}
+
+#blog a{
+  color:rgb(160, 16, 231);
+}
+
+#blog .post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.6);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  header.primary ul {
+    flex-direction: column;
+    gap:10px;
+    max-width:250px;
+    margin:auto;
+  }
+  header.primary nav a{
+    display:block;
+  }
+}
