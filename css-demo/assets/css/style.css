@@ -25,6 +25,30 @@ img{
   margin:40px auto;
 }
 
+.img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  border-radius:50px;
+}
+
+.img-left{
+  float:left;
+  margin: 10px 20px 10px 0;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  border-radius:50px;
+}
+
+img-center{
+  display:block;
+  margin:20px auto;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  border-radius:50px;
+}
+
 /*  --------------- Global Styles -----------------  */
 
 body{
@@ -33,21 +57,22 @@ body{
     }
     
 header.primary {
-   background-color: purple;
-    color:#ffffff; 
-    text-align:center;  
-    text-shadow:2px 2px 20px #000000; 
-    padding:40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;  
-    /*Single value short hand*/  
-    padding:40px;
-    /* T,R,B,L */
-    padding: 20px 40px 20px 40px;  
-    /* Two Value Top/Bottom / L/R */
-    padding: 20px 40px;
-    }
+  background-color: #743bc0;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  /*Single value short hand*/
+  padding: 40px;
+  /* T,R,B,L */
+  padding: 20px 40px 20px 40px;
+  /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
+}
 
   header.primary h1 {
     font-size: 2.4rem;
@@ -82,16 +107,15 @@ header.primary {
     list-style-type:none;
   }
 
-  header.primary nav a{
-    color:#fff;
-    text-decoration:none;
-    background-color:#000000;
-    background-color:rgba(0,0,0,.4);
-    padding:5px 10px;
-     border-radius: 20px;
-     border: 1px solid #ffffff
-     transition:.4s;
-}
+  header.primary nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 7.5px 10px;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    transition: 0.4s;
+  }
 
 header.primary nav a:hover{
   background-color:rgba(0,0,0,.8);
@@ -118,6 +142,9 @@ header.primary nav a:hover{
   flex-direction:row;
   justify-content:space-around;
   gap:2rem;
+  border-bottom:1px dotted purple;
+  padding: 2rem;
+  border-top:1px dotted purple;  
 }
 
 #blog .post{
@@ -125,6 +152,7 @@ header.primary nav a:hover{
   padding: 10px;
   border-radius:4px;
   font-size:.8rem;
+  transition:.5s;
 }
 
 #blog figure{
@@ -156,11 +184,70 @@ header.primary nav a:hover{
   box-shadow: 0 8px 16px rgba(0,0,0,.6);
 }
 
+#practice h2{
+  color: #a048b6;
+  border-bottom: 1px solid #c0c0c0;
+}
 
+table{  
+  border: 1px solid #c0c0c0;
+  width: 100%;
+  margin:20px 0;
+  border-collapse:collapse;
+}
+caption{
+  font-weight:bold;
+  margin:10px;
+}
+th{
+  background-color: #7c2588;
+  color:#ffffff;
+  padding:7.5px;
+}
+tr:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.1);
+  }
 
+td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
 
+aside[role="complementary"]{
+  background-color: #B63DF5;
+  color: #ffffff;
+  padding: 1.25rem;
+}
 
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:60px;
+}
 
+aside .container a{
+  color:#fff;
+}
+
+aside .container a:last-of-type{
+display:block;
+
+text-align:right;
+margin-top: 1rem;
+}
+
+aside .widget footer{
+  display:none;
+}
+
+#colophon{
+  background-color: #f345c8;
+  text-align:center;
+  padding:10px;
+  color:#ffffff;
+  font-size:1.1rem;
+}
 
 
 
